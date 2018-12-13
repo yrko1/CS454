@@ -1,0 +1,29 @@
+language: python
+python:
+  - '3.5'
+  - '3.6'
+
+cache:
+  - pip
+
+install:
+  - python setup.py install
+  - pip install coveralls
+  - pip install pytest-cov
+
+before_script:
+  - cd test
+
+script:
+  - pytest --cov=pyggi
+
+after_success:
+  - coveralls
+
+notifications:
+  email: false
+  slack:
+    rooms:
+      - coinse:4Uc1Pz7fxX8mxIOcwRAA9iPw
+    on_success: change
+    on_failure: always

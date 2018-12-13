@@ -1,0 +1,10 @@
+{
+  "target_files": [
+    "main.py"
+    "branching.py"
+    "convert.py"
+    "solver.py"
+    "logic.py"
+  ],
+  "test_command": "./run.sh"
+}

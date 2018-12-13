@@ -1,0 +1,6 @@
+{
+  "target_files": [
+    "main.py"
+  ],
+  "test_command": "./run.sh"
+}

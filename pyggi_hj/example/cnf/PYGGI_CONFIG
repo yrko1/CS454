@@ -1,0 +1,6 @@
+{
+  "target_files": [
+    "nonogram.py"
+  ],
+  "test_command": "./run.sh"
+}
